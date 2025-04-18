@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "../../assets/Images/1.jpg";
+import cover from "../../assets/section.jpg";
 
 const WarehousePage = () => {
   return (

@@ -5,6 +5,7 @@ import path from "path"; // ✅ <-- Add this line
 
 export default defineConfig({
   plugins: [react(), svgr()],
+  base:'/logistics',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),

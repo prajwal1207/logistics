@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
-import logo from "../../../assets/images/1.jpg";
+import logo from "../../../assets/Images/1.jpg";
 
 const cardData = [
   {

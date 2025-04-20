@@ -27,7 +27,7 @@ const WarehousePage = () => {
           <div className="h-[2px] w-20 bg-red"></div>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            OM Logistics is proud to provide exceptional warehousing facilities
+            Adhunik Transport Services is proud to provide exceptional warehousing facilities
             to meet the varied needs of our customers. We have a vast
             warehousing space of over 25 million square feet across India,
             ensuring the safety and easy accessibility of goods. Our advanced

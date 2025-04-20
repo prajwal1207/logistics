@@ -29,7 +29,7 @@ const VissionMission = () => {
           <h2 className="text-2xl text-red">Vision</h2>
           <p className="text-base sm:text-lg leading-relaxed">
             We aim to emerge as the torchbearers in the logistics industry. Our
-            vision is to establish OM Logistics as the most grounded worldwide
+            vision is to establish Adhunik Transport Services as the most grounded worldwide
             logistics and supply chain management company as a trusted partner
             to all our clients. We envision surpassing our success & customer
             loyalty levels year by year.
@@ -52,7 +52,7 @@ const VissionMission = () => {
 
           <h2 className="text-2xl text-red">Our Values</h2>
           <p className="text-base sm:text-lg leading-relaxed">
-            OM Logistics has always been values-driven. Our shared values guide
+            Adhunik Transport Services has always been values-driven. Our shared values guide
             our actions that help us make a difference. These values continue to
             direct the growth and business of OM Group. The nine core OM values
             strengthening the way we do business are

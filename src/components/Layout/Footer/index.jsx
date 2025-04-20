@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import logo from '../../../assets/logo.jpg'
+import logo from "../../../assets/logo-white.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -13,46 +14,46 @@ const Footer = () => {
     {
       title: "About Us",
       items: [
-        "Our Growth Story",
-        "Core Team",
-        "Vision, Mission & Our Values",
-        "Our Pilots",
+        { label: "Our Growth Story", href: "/our-growth-story" },
+        { label: "Core Team", href: "/core-team" },
+        {
+          label: "Vision, Mission & Our Values",
+          href: "/vision-mission-values",
+        },
+        { label: "Our Pilots", href: "/our-pilots" },
       ],
     },
     {
       title: "What we offer",
       items: [
-        "Express - Full Truck Load",
-        "Express - Part Truck Load",
-        "Speed Trucking",
-        "Air Service",
-        "Rail Service",
-        "Warehousing Service",
-        "3PL Service",
+        { label: "Express - Full Truck Load", href: "/express-ftl" },
+        { label: "Express - Part Truck Load", href: "/express-ptl" },
+        { label: "Warehousing Service", href: "/warehouse" },
+        { label: "3PL Service", href: "/3pl" },
       ],
     },
     {
       title: "Industries we serve",
       items: [
-        "Automotive & Engineering",
-        "Retail & Fashion",
-        "IT & Consumer Electronics",
-        "Healthcare & Pharmaceuticals",
-        "Books & Publishing",
-        "FMCG",
-        "Projects",
+        { label: "Automotive & Engineering", href: "/automotive-engineering" },
+        { label: "Retail & Fashion", href: "/retail-fashion" },
+        {
+          label: "IT & Consumer Electronics",
+          href: "/it-consumer-electronics",
+        },
+        {
+          label: "Healthcare & Pharmaceuticals",
+          href: "/healthcare-pharmaceuticals",
+        },
+        { label: "Books & Publishing", href: "/books-publishing" },
+        { label: "FMCG", href: "/fmcg" },
       ],
     },
     {
       title: "Join Us",
       items: [
-        "Career",
-        "Franchise",
-        "Om Institute",
-        "Retail Partner",
-        "divider",
-        "Privacy Policy",
-        "Terms And Condition",
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms And Condition", href: "/terms-condition" },
       ],
     },
   ];
@@ -62,7 +63,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Logo */}
         <div className="md:col-span-1 flex flex-col items-start">
-          <img src={logo} alt="Associated Road Carriers" className="w-40 mb-2" />
+          <img
+            src={logo}
+            alt="Associated Road Carriers"
+            className="w-40 mb-2"
+          />
           <p className="text-white font-semibold">Associated Road Carriers</p>
           <p className="text-red-500 text-xs font-semibold">
             Making Business Simple
@@ -81,9 +86,9 @@ const Footer = () => {
                     <hr key={i} className="my-2 border-gray-600" />
                   ) : (
                     <li key={i}>
-                      <a href="#" className="hover:underline">
-                        {item}
-                      </a>
+                      <Link to={item.href} className="hover:underline">
+                        {item.label}
+                      </Link>
                     </li>
                   )
                 )}
@@ -112,9 +117,9 @@ const Footer = () => {
                       <hr key={i} className="my-2 border-white" />
                     ) : (
                       <li key={i}>
-                        <a href="#" className="hover:underline">
-                          {item}
-                        </a>
+                        <Link to={item.href} className="hover:underline">
+                          {item.label}
+                        </Link>
                       </li>
                     )
                   )}
@@ -126,7 +131,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center py-4 border-t border-white text-xs">
-        Associated Road Carriers 2024 – All Rights Reserved
+        Adhunik Transport Services 2024 – All Rights Reserved
       </div>
     </footer>
   );

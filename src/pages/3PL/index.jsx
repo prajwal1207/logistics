@@ -26,7 +26,7 @@ const ThreePL = () => {
           <div className="h-[2px] w-20 bg-red"></div>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            At OM Logistics, we excel in providing top-notch third-party
+            At Adhunik Transport Services, we excel in providing top-notch third-party
             logistics (3PL) services. Being an expert, we seamlessly integrate
             supply chains, offering comprehensive solutions for efficient
             warehousing, transportation and distribution. We optimize operations

@@ -21,7 +21,7 @@ const OrganizationSection = () => {
         </p>
 
         <p className="text-base md:text-lg text-gray-800">
-          OM Logistics, with more than three decades of expertise, proudly
+          Adhunik Transport Services, with more than three decades of expertise, proudly
           stands as the premier supply chain and logistics management company in
           India. We have meticulously developed a state-of-the-art
           infrastructure, committed to delivering unparalleled services to all
@@ -32,7 +32,7 @@ const OrganizationSection = () => {
         <p className="text-base md:text-lg text-gray-800">
           We cater to large commercial enterprises as well as mid and
           small-scale businesses. Embark on a journey of innovation, reliability
-          and excellence with our team at OM Logistics as we redefine the
+          and excellence with our team at Adhunik Transport Services as we redefine the
           standards of the supply chain and logistics industry.
         </p>
 

@@ -28,18 +28,18 @@ const FTLPage = () => {
 
           <p className="text-base sm:text-lg leading-relaxed">
             Being a distinguished player in the supply chain and logistics
-            sector, OM Logistics provides well-established services for full
+            sector, Adhunik Transport Services provides well-established services for full
             truckloads, assuring the secure and visible transportation of goods.
             With a fleet of 6000+ GPS-enabled vehicles, we offer dependable Full
             Truck Load services to meet our client’s requirements.
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            At OM Logistics, full truckload service ensures smooth and reliable
+            At Adhunik Transport Services, full truckload service ensures smooth and reliable
             transportation for bulk consignments. The entire truck or fleet of
             trucks is exclusively dedicated to the client’s goods, prioritizing
             secure and on-time deliveries while addressing the specific needs of
-            the business. Businesses can rely on OM Logistics for an efficient
+            the business. Businesses can rely on Adhunik Transport Services for an efficient
             FTL experience, ensuring deliveries reach their destination safely
             and securely.
           </p>

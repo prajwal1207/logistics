@@ -89,14 +89,14 @@ const CoreTeamPage = () => {
           </h1>
           <div className="h-[2px] w-20 bg-red"></div>
           <p className="text-base sm:text-lg">
-            In the visionary landscape of OM Logistics, the key individuals
+            In the visionary landscape of Adhunik Transport Services, the key individuals
             serve as the captains steering our company’s ship to success. With
             our wealth of experience and expertise, we contribute smart ideas to
             ensure our organization remains at the forefront of delivering
             exceptional services. Working collaboratively, we promote a positive
             workplace environment and inspire all our employees to perform at
             their best. Each team member brings unique skills to the table,
-            collectively making OM Logistics an excellent workplace.
+            collectively making Adhunik Transport Services an excellent workplace.
           </p>
 
           {/* Cards Grid */}

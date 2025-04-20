@@ -27,7 +27,7 @@ const PTLPage = () => {
           <div className="h-[2px] w-20 bg-red"></div>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            OM Logistics is a leading provider of part truckload (PTL) services,
+            Adhunik Transport Services is a leading provider of part truckload (PTL) services,
             placing a priority on the secure and transparent transportation of
             goods. Managing a fleet of 6,000+ GPS-enabled vehicles operated by
             our trained drivers, we have earned recognition as a trusted brand
@@ -48,7 +48,7 @@ const PTLPage = () => {
           <h2 className="text-2xl text-red">
             PTL Services: What We Bring To The highways
           </h2>
-          <ul class="list-decimal list-inside text-gray-800 space-y-1">
+          <ul class="list-disc list-inside text-gray-800 space-y-1">
             <li>
               6,000+ fully containerized and weatherproof fleet of
               trucks/trailers covering more than 10 lakh Kilometers per day

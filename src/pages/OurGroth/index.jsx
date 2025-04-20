@@ -26,7 +26,7 @@ const OurGrothPage = () => {
           <div className="h-[2px] w-20 bg-red"></div>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            In the early chapters of 1991, we at OM Logistics embarked on a
+            In the early chapters of 1991, we at Adhunik Transport Services embarked on a
             transformative journey with a focus on quality and safety in our
             operations. As the term “Logistics” gained prominence for smartly
             moving things, we showed a commitment to quality and efficiency. By
@@ -44,7 +44,7 @@ const OurGrothPage = () => {
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            In 2015, we at OM Logistics celebrated our 25th anniversary, marking
+            In 2015, we at Adhunik Transport Services celebrated our 25th anniversary, marking
             a significant milestone in our journey. Driven by a strong vision to
             cover every square inch of India, we extended our services to Port
             Blair. In the subsequent years, we actively broadened our network to

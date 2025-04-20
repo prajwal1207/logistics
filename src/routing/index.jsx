@@ -11,8 +11,15 @@ import FTLPage from "@/pages/FTL";
 import PTLPage from "@/pages/PTL";
 import ThreePL from "@/pages/3PL";
 import WarehousePage from "@/pages/Warehouse";
-
-
+import AutomotivePage from "@/pages/Services/Automotive";
+import ItPage from "@/pages/Services/IT";
+import ReatailPage from "@/pages/Services/Reatil";
+import HealthCarePage from "@/pages/Services/Healthcare";
+import BooksPage from "@/pages/Services/Books";
+import FMCGPage from "@/pages/Services/Fmcg";
+import ContactUs from "@/pages/ContactUs";
+import PrivacyPage from "@/pages/Privacy";
+import TermsAndCondition from "@/pages/Terms";
 
 const AppRoutes = () => {
   return (
@@ -27,6 +34,18 @@ const AppRoutes = () => {
         <Route path="/express-ptl" element={<PTLPage />} />
         <Route path="/3pl" element={<ThreePL />} />
         <Route path="/warehouse" element={<WarehousePage />} />
+        <Route path="/automotive-engineering" element={<AutomotivePage />} />
+        <Route path="/it-consumer-electronics" element={<ItPage />} />
+        <Route path="/retail-fashion" element={<ReatailPage />} />
+        <Route
+          path="/healthcare-pharmaceuticals"
+          element={<HealthCarePage />}
+        />
+        <Route path="/books-publishing" element={<BooksPage />} />
+        <Route path="/fmcg" element={<FMCGPage />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
+        <Route path="/terms-condition" element={<TermsAndCondition />} />
       </Route>
     </Routes>
   );

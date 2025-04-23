@@ -209,10 +209,7 @@ const Footer = () => {
             alt="Associated Road Carriers"
             className="w-40 mb-2"
           />
-          <p className="text-white font-semibold text-lg">Associated Road Carriers</p>
-          <p className="text-red-500 text-xs font-semibold italic">
-            Making Business Simple
-          </p>
+       
         </div>
 
         {/* Sections */}

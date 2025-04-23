@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import React, { useState } from "react";
 import logo from "../../../assets/logo.svg";
 import { RxCross2 } from "react-icons/rx";
@@ -7,19 +13,13 @@ import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineAttachEmail } from "react-icons/md";
 
 const menuItems = [
-  {
-    label: "Home",
-    href: "/",
-  },
+  { label: "Home", href: "/" },
   {
     label: "About us",
     dropdown: [
       { label: "Our Growth Story", href: "/our-growth-story" },
       { label: "Core Team", href: "/core-team" },
-      {
-        label: "Vision, Mission & Our Values",
-        href: "/vision-mission-values",
-      },
+      { label: "Vision, Mission & Our Values", href: "/vision-mission-values" },
       { label: "Our Pilots", href: "/our-pilots" },
     ],
   },
@@ -38,18 +38,12 @@ const menuItems = [
       { label: "Automotive & Engineering", href: "/automotive-engineering" },
       { label: "Retail & Fashion", href: "/retail-fashion" },
       { label: "IT & Consumer Electronics", href: "/it-consumer-electronics" },
-      {
-        label: "Healthcare & Pharmaceuticals",
-        href: "/healthcare-pharmaceuticals",
-      },
+      { label: "Healthcare & Pharmaceuticals", href: "/healthcare-pharmaceuticals" },
       { label: "Books & Publishing", href: "/books-publishing" },
       { label: "FMCG", href: "/fmcg" },
     ],
   },
-  {
-    label: "Contact Us",
-    href: "/contact",
-  },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const Header = () => {
@@ -102,7 +96,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-md font-medium text-gray-800 items-center relative">
+        <div className="hidden lg:flex space-x-6 text-md font-medium text-gray-800 items-center relative">
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
               <button
@@ -114,9 +108,7 @@ const Header = () => {
               </button>
 
               {item.dropdown?.length > 0 && (
-                <div
-                  className={`absolute top-full left-0 mt-2 w-64 bg-white border shadow-md z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out pointer-events-auto`}
-                >
+                <div className={`absolute top-full left-0 mt-2 w-64 bg-white border shadow-md z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out pointer-events-auto`}>
                   {item.dropdown.map((subItem, subIdx) => (
                     <Link
                       key={subIdx}
@@ -133,54 +125,70 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Hamburger Menu Button */}
-        <div className="md:hidden">
+        {/* Hamburger Menu Button - visible below lg */}
+        <div className="lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="text-gray-800 focus:outline-none"
           >
-            {mobileMenuOpen ? (
-              <RxCross2 size={24} />
-            ) : (
-              <IoMenuSharp size={24} />
-            )}
+            {mobileMenuOpen ? <RxCross2 size={24} /> : <IoMenuSharp size={24} />}
           </button>
         </div>
 
+        {/* Mobile Menu Background Overlay */}
+        {mobileMenuOpen && (
+          <div
+            onClick={closeMobileMenu}
+            className="fixed inset-0 bg-black opacity-40 z-[30]"
+          ></div>
+        )}
+
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-md z-40 border-t mt-2 md:hidden">
-            {menuItems.map((item, index) => (
-              <div key={index} className="border-b">
-                {item.dropdown?.length > 0 ? (
-                  <>
-                    <div className="px-4 py-3 text-gray-800 font-medium">
+          <div className="fixed inset-0 top-0 left-0 w-full h-full bg-white z-[40] flex flex-col">
+            <div className="flex justify-between items-center p-4 border-b">
+              <img src={logo} alt="Logo" className="h-12 object-cover" />
+              <button
+                onClick={closeMobileMenu}
+                className="text-gray-800 text-2xl"
+              >
+                <RxCross2 />
+              </button>
+            </div>
+
+            <div className="overflow-y-auto px-4 pt-4 pb-10 flex-1">
+              {menuItems.map((item, index) => (
+                <div key={index} className="border-b">
+                  {item.dropdown?.length > 0 ? (
+                    <>
+                      <div className="py-3 text-gray-800 font-medium">
+                        {item.label}
+                      </div>
+                      <div className="pl-4 pb-2">
+                        {item.dropdown.map((subItem, subIdx) => (
+                          <Link
+                            key={subIdx}
+                            to={subItem.href}
+                            onClick={closeMobileMenu}
+                            className="block px-4 py-2 text-md text-gray-600 hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      onClick={closeMobileMenu}
+                      className="block py-3 text-gray-800 font-medium hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
+                    >
                       {item.label}
-                    </div>
-                    <div className="pl-4 pb-2">
-                      {item.dropdown.map((subItem, subIdx) => (
-                        <Link
-                          key={subIdx}
-                          to={subItem.href}
-                          onClick={closeMobileMenu}
-                          className="block px-4 py-2 text-md text-gray-600 hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <Link
-                    to={item.href}
-                    onClick={closeMobileMenu}
-                    className="block px-4 py-3 text-gray-800 font-medium hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
-                  >
-                    {item.label}
-                  </Link>
-                )}
-              </div>
-            ))}
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </nav>

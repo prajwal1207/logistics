@@ -3,43 +3,64 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 import logo from "../../../assets/Images/1.jpg";
+import { Link } from "react-router-dom";
 
 const cardData = [
   {
     title: "Express - FTL",
     desc: `Being a distinguished player in the supply chain and logistics sector, Associated Road Carriers provides well-established services for full truckloads, assuring the secure and visible transportation of goods. With a fleet of more than 6000+ GPS-enabled vehicles`,
     img: "/img/speed-trucking.jpg",
-    buttonText: "Speed Trucking",
+    buttonText: "Express - FTL",
+    href: "express-ftl",
   },
   {
     title: "Warehouse",
     desc: `Associated Road Carriers excels in providing top-notch third-party logistics (3PL) services. As experts in the field, they seamlessly integrate into supply chains, offering comprehensive solutions for efficient warehousing, transportation, and distribution.`,
     img: "/img/warehouse.jpg",
     buttonText: "Warehouse",
+    href: "/Warehouse",
   },
   {
     title: "3Pl",
     desc: `Associated Road Carriers excels in providing top-notch third-party logistics (3PL) services. As experts in the field, they seamlessly integrate into supply chains, offering comprehensive solutions for efficient warehousing, transportation, and distribution.`,
     img: "/img/rail.jpg",
-    buttonText: "Rail services",
+    buttonText: "3pl",
+    href: "/3pl",
   },
   {
     title: "Express - PTL",
     desc: `Associated Road Carriers positions as a leading provider of part truckload (PTL) services, prioritizing the secure and transparent transportation of goods. Managing a fleet of 6,000+ GPS-enabled vehicles operated by trained drivers`,
     img: "/img/ptl.jpg",
     buttonText: "Express PTL",
+    href: "/express-ptl",
+  },
+  {
+    title: "Express - FTL",
+    desc: `Being a distinguished player in the supply chain and logistics sector, Associated Road Carriers provides well-established services for full truckloads, assuring the secure and visible transportation of goods. With a fleet of more than 6000+ GPS-enabled vehicles`,
+    img: "/img/speed-trucking.jpg",
+    buttonText: "Express - FTL",
+    href: "express-ftl",
+  },
+  {
+    title: "Warehouse",
+    desc: `Associated Road Carriers excels in providing top-notch third-party logistics (3PL) services. As experts in the field, they seamlessly integrate into supply chains, offering comprehensive solutions for efficient warehousing, transportation, and distribution.`,
+    img: "/img/warehouse.jpg",
+    buttonText: "Warehouse",
+    href: "/Warehouse",
   },
   {
     title: "3Pl",
     desc: `Associated Road Carriers excels in providing top-notch third-party logistics (3PL) services. As experts in the field, they seamlessly integrate into supply chains, offering comprehensive solutions for efficient warehousing, transportation, and distribution.`,
     img: "/img/rail.jpg",
-    buttonText: "Rail services",
+    buttonText: "3pl",
+    href: "/3pl",
   },
   {
     title: "Express - PTL",
     desc: `Associated Road Carriers positions as a leading provider of part truckload (PTL) services, prioritizing the secure and transparent transportation of goods. Managing a fleet of 6,000+ GPS-enabled vehicles operated by trained drivers`,
     img: "/img/ptl.jpg",
     buttonText: "Express PTL",
+    href: "/express-ptl",
   },
 ];
 
@@ -78,9 +99,11 @@ const CarouselCard = () => {
                   {card.desc}
                 </p>
                 <div className="flex justify-center mt-auto">
-                  <button className="bg-red hover:bg-red/80 text-white px-6 py-2 text-sm rounded-full">
-                    {card.buttonText}
-                  </button>
+                  <Link to={card.href}>
+                    <button className="bg-red hover:bg-red/80 text-white min-w-18 px-6 py-2 text-sm rounded-full">
+                      {card.buttonText}
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ const ContactUs = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
-  const SHEETDB_API = "https://sheetdb.io/api/v1/dybxjbes8f9o9"; 
+  // const SHEETDB_API = "https://sheetdb.io/api/v1/dybxjbes8f9o9";
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -41,7 +41,7 @@ const ContactUs = () => {
     };
 
     try {
-      const response = await fetch(SHEETDB_API, {
+      const response = await fetch(process.env.SHEETDB_API, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

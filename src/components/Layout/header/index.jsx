@@ -160,41 +160,45 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-md z-40 border-t mt-2 md:hidden">
-            {menuItems.map((item, index) => (
-              <div key={index} className="border-b">
-                {item.dropdown?.length > 0 ? (
-                  <>
-                    <div className="px-4 py-3 text-gray-800 font-medium">
-                      {item.label}
-                    </div>
-                    <div className="pl-4 pb-2">
-                      {item.dropdown.map((subItem, subIdx) => (
-                        <Link
-                          key={subIdx}
-                          to={subItem.href}
-                          onClick={closeMobileMenu}
-                          className="block px-4 py-2 text-md text-gray-600 hover:bg-gray-100"
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <Link
-                    to={item.href}
-                    onClick={closeMobileMenu}
-                    className="block px-4 py-3 text-gray-800 font-medium hover:bg-gray-100"
-                  >
-                    {item.label}
-                  </Link>
-                )}
-              </div>
+        
+        <div
+  className={`absolute top-full left-0 w-full bg-white shadow-md z-40 border-t overflow-hidden transition-all duration-300 ease-in-out transform origin-top ${
+    mobileMenuOpen ? "max-h-[1000px] opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-95 pointer-events-none"
+  } md:hidden`}
+>
+  {menuItems.map((item, index) => (
+    <div key={index} className="border-b">
+      {item.dropdown?.length > 0 ? (
+        <>
+          <div className="px-4 py-3 text-gray-800 font-medium">
+            {item.label}
+          </div>
+          <div className="pl-4 pb-2">
+            {item.dropdown.map((subItem, subIdx) => (
+              <Link
+                key={subIdx}
+                to={subItem.href}
+                onClick={closeMobileMenu}
+                className="block px-4 py-2 text-md text-gray-600 hover:bg-gray-100"
+              >
+                {subItem.label}
+              </Link>
             ))}
           </div>
-        )}
+        </>
+      ) : (
+        <Link
+          to={item.href}
+          onClick={closeMobileMenu}
+          className="block px-4 py-3 text-gray-800 font-medium hover:bg-gray-100"
+        >
+          {item.label}
+        </Link>
+      )}
+    </div>
+  ))}
+</div>
+
       </nav>
     </header>
   );

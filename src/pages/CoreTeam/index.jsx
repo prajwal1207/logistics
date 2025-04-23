@@ -65,6 +65,12 @@ const coreTeamData = [
     image: cover,
     linkedin: "https://www.linkedin.com/in/karanpatel",
   },
+  {
+    name: "Karan Patel",
+    designation: "Chief Financial Officer",
+    image: cover,
+    linkedin: "https://www.linkedin.com/in/karanpatel",
+  },
 ];
 
 // Page Component

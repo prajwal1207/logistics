@@ -48,7 +48,7 @@ const ContactUs = () => {
     };
 
     try {
-      const response = await fetch(SHEETDB_API, {
+      const response = await fetch(process.env.SHEETDB_API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

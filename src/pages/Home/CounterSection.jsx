@@ -5,7 +5,7 @@ const Counter = ({ target, label }) => {
 
   useEffect(() => {
     let start = 0;
-    const duration = 2000; // animation duration in ms
+    const duration = 3000; // animation duration in ms
     const increment = target / (duration / 30); // adjust speed
     const counter = setInterval(() => {
       start += increment;

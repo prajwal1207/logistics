@@ -23,7 +23,6 @@ const menuItems = [
       { label: "Our Pilots", href: "/our-pilots" },
     ],
   },
-
   {
     label: "What We Offer",
     dropdown: [
@@ -68,15 +67,8 @@ const Header = () => {
 
   return (
     <header className="w-full border-b shadow-md z-[999] relative">
-      {/* <div className="w-full h-10 bg-gradient-to-r from-white via-white to-[#c32126]"></div> */}
-      <div
-        className="w-full h-auto text-white font-bold "
-        style={{
-          background: "linear-gradient(to right, white 20%, #c32126 60%)",
-        }}
-      >
+      <div className="w-full h-auto text-white font-bold bg-gradient-to-r from-white via-[#c32126] to-red-700 bg-[length:200%_200%] animate-subtleGradient">
         <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-end items-end gap-2 text-sm sm:text-[14px]">
-          {/* WhatsApp */}
           <a
             href="https://wa.me/917000448907"
             target="_blank"
@@ -86,7 +78,6 @@ const Header = () => {
             <FaWhatsapp size="1.5rem" />
           </a>
 
-          {/* Phone */}
           <a
             href="tel:+917000448907"
             className="flex items-center gap-2 hover:underline"
@@ -95,7 +86,6 @@ const Header = () => {
             +91 7000448907
           </a>
 
-          {/* Email */}
           <a
             href="mailto:info@adhuniktransport.com"
             className="flex items-center gap-2 hover:underline"
@@ -107,7 +97,6 @@ const Header = () => {
       </div>
 
       <nav className="bg-white w-full py-3 flex justify-between items-center relative px-4 sm:px-8 md:px-16">
-        {/* Logo */}
         <Link to="/" onClick={closeMobileMenu}>
           <img src={logo} alt="Logo" className="h-18 object-cover" />
         </Link>
@@ -115,26 +104,25 @@ const Header = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-md font-medium text-gray-800 items-center relative">
           {menuItems.map((item, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative group">
               <button
                 onClick={() => handleDropdownToggle(index)}
-                className="hover:text-blue-600 flex items-center gap-1 focus:outline-none"
+                className="flex items-center gap-1 focus:outline-none transition-all duration-300 hover:text-[#c32126]"
               >
-                <Link to={item.href}>{item.label}</Link>
+                <Link to={item.href || "#"}>{item.label}</Link>
                 {item.dropdown?.length > 0 && <span>▾</span>}
               </button>
 
-              {activeDropdown === index && item.dropdown?.length > 0 && (
+              {item.dropdown?.length > 0 && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-64 bg-white border shadow-md z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  className={`absolute top-full left-0 mt-2 w-64 bg-white border shadow-md z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out pointer-events-auto`}
                 >
                   {item.dropdown.map((subItem, subIdx) => (
                     <Link
                       key={subIdx}
                       to={subItem.href}
                       onClick={() => setActiveDropdown(null)}
-                      className="block px-4 py-2 hover:bg-gray-100 text-md text-gray-700"
+                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
                     >
                       {subItem.label}
                     </Link>
@@ -175,7 +163,7 @@ const Header = () => {
                           key={subIdx}
                           to={subItem.href}
                           onClick={closeMobileMenu}
-                          className="block px-4 py-2 text-md text-gray-600 hover:bg-gray-100"
+                          className="block px-4 py-2 text-md text-gray-600 hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
                         >
                           {subItem.label}
                         </Link>
@@ -186,7 +174,7 @@ const Header = () => {
                   <Link
                     to={item.href}
                     onClick={closeMobileMenu}
-                    className="block px-4 py-3 text-gray-800 font-medium hover:bg-gray-100"
+                    className="block px-4 py-3 text-gray-800 font-medium hover:bg-gray-100 hover:text-[#c32126] transition duration-200"
                   >
                     {item.label}
                   </Link>

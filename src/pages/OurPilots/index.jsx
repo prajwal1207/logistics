@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "../../assets/drivers-scaled.jpg";
+import  driver from "../../assets/drivers.jpg";
 
 const OurPilotsPage = () => {
   return (
@@ -7,7 +7,7 @@ const OurPilotsPage = () => {
       {/* Hero Section */}
       <section className="relative w-full h-[60vh] md:h-[80vh]">
         {/* Background Image */}
-        <img src={cover} alt="Cover" className="w-full h-full object-cover" />
+        <img src={driver} alt="Cover" className="w-full h-full object-cover" />
 
         {/* Text Overlay */}
         <div className="absolute inset-0 bg-black/50 flex items-center px-6 sm:px-12 md:px-24">

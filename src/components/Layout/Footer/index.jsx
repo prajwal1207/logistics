@@ -65,10 +65,10 @@
 //         <div className="md:col-span-1 flex flex-col items-start">
 //           <img
 //             src={logo}
-//             alt="Associated Road Carriers"
+//             alt="Adhunik Transport Services"
 //             className="w-40 mb-2"
 //           />
-//           <p className="text-white font-semibold">Associated Road Carriers</p>
+//           <p className="text-white font-semibold">Adhunik Transport Services</p>
 //           <p className="text-red-500 text-xs font-semibold">
 //             Making Business Simple
 //           </p>
@@ -140,7 +140,7 @@
 // export default Footer;
 
 import { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaRegCopyright } from "react-icons/fa";
 import logo from "../../../assets/logo-white.svg";
 import { Link } from "react-router-dom";
 
@@ -206,7 +206,7 @@ const Footer = () => {
         <div className="md:col-span-1 flex flex-col items-start">
           <img
             src={logo}
-            alt="Associated Road Carriers"
+            alt="Adhunik Transport Services"
             className="w-40 mb-2"
           />
        
@@ -275,7 +275,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center py-4 border-t border-white text-l">
-        Adhunik Transport Services 2024 – All Rights Reserved
+        Adhunik Transport Services 2024 –  © All Rights Reserved
       </div>
     </footer>
   );

@@ -21,7 +21,7 @@ const OrganizationSection = () => {
         </p>
 
         <p className="text-base md:text-lg text-gray-800">
-          Adhunik Transport Services, with more than three decades of expertise, proudly
+          Adhunik Transport Services, with more than three 10 years of expertise, proudly
           stands as the premier supply chain and logistics management company in
           India. We have meticulously developed a state-of-the-art
           infrastructure, committed to delivering unparalleled services to all
@@ -55,6 +55,7 @@ const OrganizationSection = () => {
 
           <h2 className="text-red text-2xl font-bold ">Our Mission Statement</h2>
           <p className="text-lg  text-gray-800">Message From Our Managing Director's Desk</p>
+          <p className="text-lg  text-gray-800"><strong>Shri Gajraj Singh</strong></p>
         </span>
       </div>
     </div>

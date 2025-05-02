@@ -45,8 +45,6 @@ const ThreePL = () => {
             <li>Just In Time Supplies (JIT) DI system</li>
             <li>Direct On-Line Deliveries (DOL)</li>
             <li>Combination of JIT and DOL</li>
-            <li>System and Management of “SPD” Concept</li>
-            <li>Bin Charging, Kitting and Consolidation</li>
             <li>
               Milk Run Application Distribution through Hub & Spoke System
             </li>
@@ -59,7 +57,6 @@ const ThreePL = () => {
             <li>
               Dedicated Vehicles / Designed Vehicles Logistics Related Support
             </li>
-            <li>Tracking and Tracing through GPS</li>
             <li>Inventory Storage and Management</li>
             <li>Shipping And Distribution</li>
             <li>Customs Clearance/Declaration</li>

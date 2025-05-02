@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import cover from "../../assets/Images/1.jpg";
 import {
@@ -102,21 +100,21 @@ const ContactUs = () => {
                 href="https://www.google.com/maps/search/?api=1&query=00+A.+B.+Road,+Dewas+Naka,+Indore+(M.P.)"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105"
+                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105  w-fit"
               >
                 <FaMapMarkerAlt className="text-xl" />
                 00 A. B. Road, Dewas Naka, Indore (M.P.)
               </a>
               <a
                 href="mailto:yourmail@example.com"
-                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105"
+                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105 w-fit"
               >
                 <FaEnvelope className="text-xl" />
-                adhuniktpt1989@gmail.com
+                info@adhuniktransport.com
               </a>
               <a
                 href="tel:0731 4023738"
-                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105"
+                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105 w-fit"
               >
                 <FaPhoneAlt className="text-xl" />
                 0731 4023738
@@ -125,7 +123,7 @@ const ContactUs = () => {
                 href="https://wa.me/7000448907"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105"
+                className="flex items-center gap-3 text-gray-700 hover:text-red transition-transform hover:scale-105 w-fit"
               >
                 <FaWhatsapp className="text-xl" />
                 Chat on WhatsApp
@@ -202,5 +200,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-
-

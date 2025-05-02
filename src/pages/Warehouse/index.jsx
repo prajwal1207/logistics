@@ -44,10 +44,6 @@ const WarehousePage = () => {
           <ul class="list-disc pl-6 space-y-2 text-gray-800">
             <li>Warehouse management solution integrated with ERP systems.</li>
             <li>
-              Strong cross-dock for easy flow through, value-added Service (VAS)
-              with quick transshipment facility.
-            </li>
-            <li>
               Equipped warehouses with modern material-handling equipment.
             </li>
             <li>

@@ -26,17 +26,17 @@ const OurGrothPage = () => {
           <div className="h-[2px] w-20 bg-red"></div>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            In the early chapters of 1991, we at Adhunik Transport Services embarked on a
+            In the early chapters of 2001, we at Adhunik Transport Services embarked on a
             transformative journey with a focus on quality and safety in our
             operations. As the term “Logistics” gained prominence for smartly
             moving things, we showed a commitment to quality and efficiency. By
-            1999, our company had evolved into a comprehensive logistics
+            2001 , our company had evolved into a comprehensive logistics
             solutions provider, showcasing our leadership in the systematic
             management of EXIM cargo.
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            Throughout the early 2000s, our focus on technology integration and
+            Throughout the early 2001, our focus on technology integration and
             real-time tracking solutions highlighted our commitment to a
             customer-centric approach. We showcased proactive measures by
             strategically expanding our network and adding pin codes to meet our
@@ -44,12 +44,12 @@ const OurGrothPage = () => {
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            In 2015, we at Adhunik Transport Services celebrated our 25th anniversary, marking
+            In 2015, we at Adhunik Transport Services celebrated our 5th anniversary, marking
             a significant milestone in our journey. Driven by a strong vision to
             cover every square inch of India, we extended our services to Port
             Blair. In the subsequent years, we actively broadened our network to
-            SAARC countries like Nepal, Bhutan, Bangladesh & Myanmar,
-            effortlessly extending our reach to neighbouring nations.
+            Cities like Dehli , Banglore, Kolkata & Mumbai,
+            effortlessly extending our reach to neighbouring states.
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">

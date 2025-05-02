@@ -30,7 +30,7 @@ const FTLPage = () => {
             Being a distinguished player in the supply chain and logistics
             sector, Adhunik Transport Services provides well-established services for full
             truckloads, assuring the secure and visible transportation of goods.
-            With a fleet of 6000+ GPS-enabled vehicles, we offer dependable Full
+            With a fleet of 200+ vehicles, we offer dependable Full
             Truck Load services to meet our client’s requirements.
           </p>
 
@@ -47,12 +47,7 @@ const FTLPage = () => {
             FTL Services: What We Bring To The highways
           </h2>
           <ul class="list-disc pl-6 space-y-2 text-gray-700">
-            <li>
-              6,000+ fully containerized and weatherproof fleet of
-              trucks/trailers covering more than 10 lakh Kilometers per day
-            </li>
-            <li>Fleet tracking by GPS monitoring system</li>
-            <li>24 X 7 X 365 Online track and trace</li>
+         
             <li>Door pickup and delivery</li>
             <li>Hourly committed delivery</li>
             <li>ODC consignment movements</li>

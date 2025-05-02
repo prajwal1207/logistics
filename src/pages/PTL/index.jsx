@@ -49,17 +49,10 @@ const PTLPage = () => {
             PTL Services: What We Bring To The highways
           </h2>
           <ul class="list-disc list-inside text-gray-800 space-y-1">
-            <li>
-              6,000+ fully containerized and weatherproof fleet of
-              trucks/trailers covering more than 10 lakh Kilometers per day
-            </li>
             <li>Paid and To-Pay service</li>
             <li>Prepaid Freight service</li>
             <li>Express Logistics</li>
-            <li>Fleet tracking by GPS monitoring system</li>
-            <li>24 X 7 X 365 Online track and trace</li>
             <li>Distribution through the hub and spoke model</li>
-            <li>5500+ dedicated personnel working round the clock</li>
             <li>Door pickup and delivery</li>
             <li>Hourly committed delivery</li>
             <li>COD / DOD delivery facility</li>

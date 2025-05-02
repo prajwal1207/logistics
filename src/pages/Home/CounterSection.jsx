@@ -29,16 +29,15 @@ const Counter = ({ target, label }) => {
 
 const CounterSection = () => {
   const counters = [
-    { target: 27000, label: "Serviceable Pin Codes" },
-    { target: 25, label: "Million Sq.ft Warehouse Storage spaces" },
-    { target: 750, label: "Branches" },
-    { target: 2500, label: "Scheduled Destination" },
-    { target: 50, label: "Cross Docks Center" },
-    { target: 6000, label: "Closed Body Vehicles" },
+    { target: 2000, label: "Serviceable Pin Codes" },
+    { target: 5, label: "Million Sq.ft Warehouse Storage spaces" },
+    { target: 20, label: "Branches" },
+    { target: 1000, label: "Scheduled Destination" },
+    { target: 200, label: "Closed Body Vehicles" },
   ];
 
   return (
-    <div className="grid grid-cols-1  md:grid-cols-6 gap-8 md:gap-6  py-10 bg-white">
+    <div className="grid grid-cols-1  md:grid-cols-5 gap-8 md:gap-6  py-10 bg-white">
       {counters.map((counter, index) => (
         <Counter key={index} target={counter.target} label={counter.label} />
       ))}
